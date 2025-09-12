@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seriog.Sink.Redis.Core", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.Redis.Writer", "Serilog.Sink.Redis.Writer\Serilog.Sink.Redis.Writer.csproj", "{BE0B81B4-8961-8438-726C-46ABB6699BCE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.Redis", "Serilog.Sink.Redis\Serilog.Sink.Redis.csproj", "{7C091F93-4C7E-5FF1-156C-68F9F6AA653C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BE0B81B4-8961-8438-726C-46ABB6699BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE0B81B4-8961-8438-726C-46ABB6699BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE0B81B4-8961-8438-726C-46ABB6699BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C091F93-4C7E-5FF1-156C-68F9F6AA653C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C091F93-4C7E-5FF1-156C-68F9F6AA653C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C091F93-4C7E-5FF1-156C-68F9F6AA653C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C091F93-4C7E-5FF1-156C-68F9F6AA653C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
