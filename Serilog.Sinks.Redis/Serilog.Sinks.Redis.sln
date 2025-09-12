@@ -3,12 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}"
-	ProjectSection(SolutionItems) = preProject
-		Seriog.Sink.Redis.Core\Seriog.Sink.Redis.Core.csproj = Seriog.Sink.Redis.Core\Seriog.Sink.Redis.Core.csproj
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seriog.Sink.Redis.Core", "Seriog.Sink.Redis.Core\Seriog.Sink.Redis.Core.csproj", "{FBFE1C1D-581B-40AE-6E38-89C1F6013238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sink.Redis.Writer", "Serilog.Sink.Redis.Writer\Serilog.Sink.Redis.Writer.csproj", "{BE0B81B4-8961-8438-726C-46ABB6699BCE}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBFE1C1D-581B-40AE-6E38-89C1F6013238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFE1C1D-581B-40AE-6E38-89C1F6013238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFE1C1D-581B-40AE-6E38-89C1F6013238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFE1C1D-581B-40AE-6E38-89C1F6013238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0B81B4-8961-8438-726C-46ABB6699BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0B81B4-8961-8438-726C-46ABB6699BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0B81B4-8961-8438-726C-46ABB6699BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0B81B4-8961-8438-726C-46ABB6699BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
