@@ -8,6 +8,9 @@ namespace Serilog.Sink.Redis
     public class RedisSink : ILogEventSink
     {
         private readonly IRedisDbWriter _redisDbWriter;
+
+        public RedisKey LastKey { get; private set; }
+
         public RedisSink(IConnectionMultiplexer multiplexer, IRedisDbWriter redisDbWriter)
         {
             _redisDbWriter = redisDbWriter;
@@ -15,7 +18,7 @@ namespace Serilog.Sink.Redis
         
         public void Emit(LogEvent logEvent)
         {
-            _redisDbWriter.Write(logEvent);
+           LastKey = _redisDbWriter.Write(logEvent);
         }
     }
 }
