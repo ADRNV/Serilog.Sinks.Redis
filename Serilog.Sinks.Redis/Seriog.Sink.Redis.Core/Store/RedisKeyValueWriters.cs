@@ -45,7 +45,7 @@ namespace Seriog.Sink.Redis.Core.Store
     {
         public override HashEntry PrepareValue(LogEvent log, IFormatProvider? format = null)
         {
-            RedisValue exception = log.Exception != null ? log.Exception.ToString() : RedisValue.EmptyString;
+            RedisValue exception = log.Exception != null ? log.Exception.ToString() : RedisValue.Null;
 
             return new HashEntry(RedisDefaultKeys.Exception, exception);
         }
