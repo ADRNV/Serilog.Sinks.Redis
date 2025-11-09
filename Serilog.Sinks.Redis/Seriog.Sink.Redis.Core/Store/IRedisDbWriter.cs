@@ -1,9 +1,11 @@
 ﻿using Serilog.Events;
+using StackExchange.Redis;
 
 namespace Seriog.Sink.Redis.Core.Store
 {
     public interface IRedisDbWriter
     {
-        public void Write(LogEvent log, IFormatProvider? formatProvider = null);
+        public RedisKey Write(LogEvent log, IFormatProvider? formatProvider = null);
+
     }
 }
