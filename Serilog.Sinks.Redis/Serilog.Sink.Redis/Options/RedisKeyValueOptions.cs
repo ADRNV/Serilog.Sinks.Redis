@@ -12,6 +12,8 @@ namespace Serilog.Sink.Redis.Options
 
         public IReadOnlyDictionary<string, RedisKeyValueWriterBase<HashEntry>> WriteKeyValues { get; private set; }
 
+        public bool WriteAsTransaction { get; internal set; }
+
         internal IDictionary<string, RedisKeyValueWriterBase<HashEntry>> DraftKeyValues { get; private set; }
 
         public RedisKeyValueOptions(bool hasDefaultKeyValues, IReadOnlyDictionary<string, RedisKeyValueWriterBase<HashEntry>>  writeKeyValues, IKeyGenerator keyGenerator)

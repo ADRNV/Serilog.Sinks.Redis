@@ -13,6 +13,13 @@ namespace Serilog.Sink.Redis.Options
             return builder;
         }
 
+        public static RedisKeyValueOptionsBuilder HasDefaultKeyValues(this RedisKeyValueOptionsBuilder builder)
+        {
+            builder.HasDefaultKeyValues = true;
+
+            return builder;
+        }
+
         public static RedisKeyValueOptionsBuilder AddKeyGenerator(this RedisKeyValueOptionsBuilder builder, IKeyGenerator keyGenerator)
         {
             builder.KeyGenerator = keyGenerator;
